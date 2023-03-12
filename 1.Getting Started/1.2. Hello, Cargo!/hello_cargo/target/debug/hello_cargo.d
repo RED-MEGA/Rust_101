@@ -1,0 +1,1 @@
+/Users/reben-ha/Documents/Rust/1.Getting\ Started/1.2.\ Hello,\ Cargo!/hello_cargo/target/debug/hello_cargo: /Users/reben-ha/Documents/Rust/1.Getting\ Started/1.2.\ Hello,\ Cargo!/hello_cargo/src/main.rs
