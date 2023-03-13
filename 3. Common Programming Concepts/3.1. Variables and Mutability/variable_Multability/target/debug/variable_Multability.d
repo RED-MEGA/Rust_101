@@ -1,0 +1,1 @@
+/home/alien-mega/Documents/Rust_code/3.\ Common\ Programming\ Concepts/3.1.\ Variables\ and\ Mutability/variable_Multability/target/debug/variable_Multability: /home/alien-mega/Documents/Rust_code/3.\ Common\ Programming\ Concepts/3.1.\ Variables\ and\ Mutability/variable_Multability/src/main.rs
