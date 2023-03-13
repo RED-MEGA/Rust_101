@@ -6,7 +6,7 @@
 /*   By: reben-ha <reben-ha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 18:26:16 by reben-ha          #+#    #+#             */
-/*   Updated: 2023/03/12 19:57:48 by reben-ha         ###   ########.fr       */
+/*   Updated: 2023/03/13 03:17:28 by reben-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ fn  shadowing()
     /*
     You can use name of variable twice 
     and this can help you if you want to
-    change type of variable 
+    change type of variable
     */
 }
 
