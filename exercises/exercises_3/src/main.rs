@@ -6,57 +6,20 @@
 /*   By: reben-ha <reben-ha@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 17:49:25 by reben-ha          #+#    #+#             */
-/*   Updated: 2023/04/25 20:17:46 by reben-ha         ###   ########.fr       */
+/*   Updated: 2023/04/25 21:54:46 by reben-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 /* Exercise : Shape */
 
-use std::f32::consts::PI;
-
-enum Shape
-{
-	Circle(f32),
-	Square(f32),
-	Triangle(f32, f32)
-}
-
-impl Shape
-{
-	fn	calculates_area(&self) -> f32
-	{
-		match self {
-			Shape::Circle(radius) => PI * radius * radius,
-			Shape::Square(len)=> len * len,
-			Shape::Triangle(base, height)=> base * height * 0.5,
-		}
-	}
-}
 
 /* Exercise : Color */
 
-enum Color
-{
-	RED,
-	GREEN,
-	BLUE,
-	YELLOW,
-}
+mod utils;
 
-impl Color
-{
-	fn rgb_value(&self) -> (u8, u8, u8)
-	{
-		match self
-		{
-			self::Color::BLUE => (0, 0, 255),
-			self::Color::RED => (255, 0, 0),
-			self::Color::YELLOW => (255, 255, 0),
-			self::Color::GREEN => (0, 255, 0)
-		}
-	}
-}
+use crate::utils::utils::color_utils::Color;
+use crate::utils::utils::color_utils::rgb_value;
 
 fn	main()
 {
@@ -71,17 +34,17 @@ fn	main()
     // println!("Area of triangle: {}", triangle.calculates_area());
 	// println!("\n\n");
 	
-	// println!("\n\n Exercise : Color\n");
+	println!("\n\n Exercise : Color\n");
 	
-    // let red = Color::RED;
-    // let green = Color::GREEN;
-    // let blue = Color::BLUE;
-    // let yellow = Color::YELLOW;
+    let red = Color::RED;
+    let green = Color::GREEN;
+    let blue = Color::BLUE;
+    let yellow = Color::YELLOW;
 	
-    // println!("Area of RED: {:?}", red.rgb_value());
-    // println!("Area of GREEN: {:?}", green.rgb_value());
-    // println!("Area of BLUE: {:?}", blue.rgb_value());
-    // println!("Area of YELLOW: {:?}", yellow.rgb_value());
-	// println!("\n\n");
+    println!("Area of RED: {:?}", rgb_value(red));
+    println!("Area of GREEN: {:?}", rgb_value(green));
+    println!("Area of BLUE: {:?}", rgb_value(blue));
+    println!("Area of YELLOW: {:?}", rgb_value(yellow));
+	println!("\n\n");
 
 }
