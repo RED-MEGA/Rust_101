@@ -44,16 +44,16 @@ pub mod utils
 			Triangle(f32, f32)
 		}
 		
-		impl Shape
+
+		pub fn	calculates_area(shape : Shape) -> f32
 		{
-			pub fn	calculates_area(&self) -> f32
-			{
-				match self {
+				match shape {
 					Shape::Circle(radius) => PI * radius * radius,
 					Shape::Square(len)=> len * len,
 					Shape::Triangle(base, height)=> base * height * 0.5,
 				}
-			}
 		}
 	}
 }
+
+pub use utils::*;

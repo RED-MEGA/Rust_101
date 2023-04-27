@@ -10,29 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /* Exercise : Shape */
 
 
 /* Exercise : Color */
 
-mod utils;
 
-use crate::utils::utils::color_utils::Color;
-use crate::utils::utils::color_utils::rgb_value;
+// use utils::color_utils::*;
+
+// use test_lib::utils::color_utils::*;
+// use test_lib::utils::shape_utils::*;
+
+use test_lib::test_lib::color_utils::*;
+use test_lib::test_lib::shape_utils::*;
 
 fn	main()
 {
-	// println!("\n\nExercise : Shape\n");
+	println!("\n\nExercise : Shape\n");
 	
-    // let circle = Shape::Circle(5.0);
-    // let square = Shape::Square(10.0);
-    // let triangle = Shape::Triangle(4.0, 6.0);
+    let circle = Shape::Circle(5.0);
+    let square = Shape::Square(10.0);
+    let triangle = Shape::Triangle(4.0, 6.0);
 	
-    // println!("Area of circle: {}", circle.calculates_area());
-    // println!("Area of square: {}", square.calculates_area());
-    // println!("Area of triangle: {}", triangle.calculates_area());
-	// println!("\n\n");
+    println!("Area of circle: {}", circle.calculates_area());
+    println!("Area of square: {}", square.calculates_area());
+    println!("Area of triangle: {}", triangle.calculates_area());
+	println!("\n\n");
 	
 	println!("\n\n Exercise : Color\n");
 	

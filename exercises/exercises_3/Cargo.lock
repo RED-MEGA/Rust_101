@@ -5,3 +5,10 @@ version = 3
 [[package]]
 name = "exercises_3"
 version = "0.1.0"
+dependencies = [
+ "test_lib",
+]
+
+[[package]]
+name = "test_lib"
+version = "0.1.0"
